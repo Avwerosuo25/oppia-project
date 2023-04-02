@@ -1,0 +1,457 @@
+/* Apply to all elements on the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Set the base font size */
+html {
+  font-size: 16px;
+}
+
+/* Sticky navigation bar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Style the header */
+header {
+  background-color: aqua;
+  color: white;
+  padding: 1rem 0;
+}
+
+/* Style the h1 */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+/* Navbar styles */
+.navbar {
+  padding: 5px;
+  background-color: aqua;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+  color: white;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+
+/* Style the navigation links 
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: lightgray;
+}
+
+/* Style the search icon 
+nav .fas {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+} */
+
+/* Style the carousel images */
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Style the carousel indicators */
+.carousel-indicators li {
+  background-color: aqua;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.carousel-indicators .active {
+  background-color: aqua;
+  border-color: aqua;
+}
+
+/* Style the about section */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 60px 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#about h2 {
+  color: aqua;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#about h3 {
+  color: aqua;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#identify {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+#identify h2 {
+  color: aqua;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#identify img {
+  display: block;
+  float: left;
+  margin-right: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#identify blockquote {
+  color: #00ffff;
+  font-size: 20px;
+  line-height: 1.5;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+#identify h3 {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+#identify .row + .row {
+  margin-top: 50px;
+}
+
+#sample {
+  text-align: center;
+}
+
+#sample h2 {
+  color: aqua;
+}
+
+#sample p {
+  color: black;
+  font-size: 20px;
+  text-align: left;
+}
+
+#sample .gallery {
+  display: flex;
+  justify-content: center;
+}
+
+#sample .gallery img {
+  margin: 10px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#plan {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+#plan h2 {
+  color: cyan;
+  font-size: 28px;
+}
+
+#plan p {
+  color: black;
+  float: left;
+  font-size: 28px;
+}
+
+#plan ol {
+  list-style: decimal;
+  padding-left: 40px;
+  color: black;
+  text-align: left;
+  font-size: 20px;
+}
+
+#plan li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* CSS for the #journey section */
+#journey {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#journey img {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+#journey h3 {
+  color: aqua;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#journey p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* CSS for the #journey section */
+#learning {
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#learning img {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+#learning h3 {
+  color: aqua;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#learning p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+
+footer {
+  background-color: aqua;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+#footer nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+#footer nav-item {
+  margin-right: 20px;
+}
+
+#footer nav-link {
+  text-decoration: none;
+  color: #f8f8f8;
+  transition: color 0.3s ease;
+}
+
+#footer nav-link:hover {
+  color: #000;
+}
+
+.text-md-right {
+  text-align: right;
+  font-size: 18px;
+}
+
+.text-md-right a {
+  color: #f8f8f8;
+  transition: color 0.3s ease;
+}
+
+.text-md-right a:hover {
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media rule for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust the base font size */
+  html {
+    font-size: 14px;
+  }
+  
+  /* Adjust the h1 font size */
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  /* Adjust the navigation link margin */
+  nav li {
+    margin-left: 0.5rem;
+  }
+  
+  /* Adjust the search icon size */
+  nav .fas {
+    font-size: 1rem;
+  }
+}
+
+
+/* @media rule for smaller screens */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 400px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    .identify-container {
+      flex-direction: column;
+    }
+    
+    .identify-text {
+      padding: 20px 0;
+    }
+  }
+
+
+@media screen and (max-width: 768px) {
+    #sample .gallery {
+      flex-wrap: wrap;
+    }
+  
+    #sample .gallery img {
+      flex: 0 0 100%;
+      margin: 10px 0;
+    }
+  }
+  
+@media screen and (max-width: 768px) {
+    #plan ol {
+      padding-left: 20px;
+    }
+  }
+
+  /* @media query for responsive design */
+@media only screen and (max-width: 767px) {
+  #journey h3 {
+    font-size: 24px;
+  }
+  
+  #journey p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  #journey, #learning {
+    padding: 30px 0;
+  }
+  
+  #journey h3, #learning h3 {
+    font-size: 24px;
+  }
+  
+  #journey p, #learning p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .text-md-right {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .text-md-right a {
+    display: block;
+  }
+}
