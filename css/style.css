@@ -141,6 +141,13 @@ nav .fas {
   text-align: left;
 }
 
+#about ul{
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
 #identify {
   background-color: #f8f8f8;
   padding: 50px 0;
